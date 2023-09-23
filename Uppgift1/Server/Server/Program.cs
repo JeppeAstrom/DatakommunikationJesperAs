@@ -36,7 +36,7 @@ public class Program
   
 
         // Svara klienten
-        var response = $"Hello, {person.FirstName + " " + person.LastName}!";
+        var response = $"Hej, {person.FirstName + " " + person.LastName}!";
         writer.WriteLine(response);
         writer.Flush();
 

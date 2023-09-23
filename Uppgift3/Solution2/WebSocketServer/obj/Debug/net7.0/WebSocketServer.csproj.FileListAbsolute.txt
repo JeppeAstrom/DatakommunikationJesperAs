@@ -1,0 +1,17 @@
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\bin\Debug\net7.0\WebSocketServer.exe
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\bin\Debug\net7.0\WebSocketServer.deps.json
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\bin\Debug\net7.0\WebSocketServer.runtimeconfig.json
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\bin\Debug\net7.0\WebSocketServer.dll
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\bin\Debug\net7.0\WebSocketServer.pdb
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.csproj.AssemblyReference.cache
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.AssemblyInfoInputs.cache
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.AssemblyInfo.cs
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.csproj.CoreCompileInputs.cache
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.csproj.CopyComplete
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.dll
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\refint\WebSocketServer.dll
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.pdb
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\WebSocketServer.genruntimeconfig.cache
+C:\Users\jespe\Downloads\DataKommunikationJesperAs\Uppgift3\Solution2\WebSocketServer\obj\Debug\net7.0\ref\WebSocketServer.dll
