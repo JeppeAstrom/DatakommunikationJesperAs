@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Solution1\\Client\\Sender.csproj",
+      "projectUniqueName": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Uppgift2\\Client\\Sender.csproj",
       "projectName": "Sender",
-      "projectPath": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Solution1\\Client\\Sender.csproj",
+      "projectPath": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Uppgift2\\Client\\Sender.csproj",
       "packagesPath": "C:\\Users\\jespe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Solution1\\Client\\obj\\",
+      "outputPath": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Uppgift2\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
