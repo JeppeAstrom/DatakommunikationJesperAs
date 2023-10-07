@@ -10,21 +10,21 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        // Initialize HTTP listener on port 8080
+        // Initierar upp en HTTP-lyssnare på port 8080
         HttpListener httpListener = new HttpListener();
         httpListener.Prefixes.Add("http://localhost:8080/");
         httpListener.Start();
 
-        Console.WriteLine("WebSocket server started. Listening...");
+        Console.WriteLine("WebSocket-server startad. Lyssnar...");
 
         while (true)
         {
-            // Await incoming HTTP connection
+            // Väntar på en inkommande HTTP-anslutning
             HttpListenerContext context = await httpListener.GetContextAsync();
 
             if (context.Request.IsWebSocketRequest)
             {
-                // Accept WebSocket connection
+                // Godkänner WebSocket-anslutning
                 HttpListenerWebSocketContext webSocketContext = await context.AcceptWebSocketAsync(null);
                 WebSocket webSocket = webSocketContext.WebSocket;
 
@@ -40,28 +40,27 @@ class Program
 
     private static async Task EchoLoop(WebSocket webSocket)
     {
-        // Buffer to hold received data
+        // Buffert för att hålla mottagna data
         var buffer = new byte[1024 * 4];
         while (true)
         {
-            // Receive data
+            // Tar emot data
             WebSocketReceiveResult result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
 
-            // Deserialize JSON data
+            // Deserialiserar JSON-datan
             string jsonInput = Encoding.UTF8.GetString(buffer, 0, result.Count);
             dynamic data = JsonConvert.DeserializeObject(jsonInput);
 
-            // Display received message on the server console
-            Console.WriteLine($"Received message from client: {data.Message}");
+            // Visar det mottagna meddelande på serverkonsolen
+            Console.WriteLine($"Mottaget meddelande från klient: {data.Message}");
 
-            // Send back the data with current time
+            // Skickar tillbaka datan med aktuell tid
             data.ServerTime = DateTime.Now;
             string jsonOutput = JsonConvert.SerializeObject(data);
 
-            // Send serialized JSON back to client
+            // Skicka serialiserad JSON tillbaka till klienten
             byte[] sendBuffer = Encoding.UTF8.GetBytes(jsonOutput);
             await webSocket.SendAsync(new ArraySegment<byte>(sendBuffer), result.MessageType, result.EndOfMessage, CancellationToken.None);
-
         }
     }
 }

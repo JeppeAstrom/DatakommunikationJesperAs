@@ -8,24 +8,24 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Initialize UDP client
+        // Initierar upp en UDP-klient
         using (UdpClient udpClient = new UdpClient())
         {
-            udpClient.Connect("127.0.0.1", 12345);  // Replace with the receiver's IP and port
+            udpClient.Connect("127.0.0.1", 12345);  
 
             while (true)
             {
-                // Get user input
-                Console.WriteLine("Write your message (or type 'exit' to quit):");
+                // Tar in användarens inmatning
+                Console.WriteLine("Skriv ditt meddelande (eller skriv 'exit' för att avsluta):");
                 string message = Console.ReadLine();
 
-                // Exit condition
+                // Villkor för att avsluta
                 if (message == "exit")
                 {
                     break;
                 }
 
-                // Create a data object and serialize to JSON
+                // Skapar upp ett dataobjekt och serialisera det till JSON
                 var data = new
                 {
                     Message = message,
@@ -33,11 +33,11 @@ class Program
                 };
                 string jsonData = JsonConvert.SerializeObject(data);
 
-                // Convert to bytes and send
+                // Konverterar till bytes och skicka
                 byte[] messageBytes = Encoding.UTF8.GetBytes(jsonData);
                 udpClient.Send(messageBytes, messageBytes.Length);
 
-                Console.WriteLine("Message sent.");
+                Console.WriteLine("Meddelandet skickat.");
             }
         }
     }

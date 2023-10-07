@@ -9,40 +9,40 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        // Create a client WebSocket
+        // Skapar upp en klient WebSocket
         var client = new ClientWebSocket();
         await client.ConnectAsync(new Uri("ws://localhost:8080/"), CancellationToken.None);
-        Console.WriteLine("WebSocket client connected.");
+        Console.WriteLine("WebSocket-klienten är ansluten.");
 
         while (true)
         {
-            // Read user input
-            Console.WriteLine("Write your message (or type 'exit' to quit):");
+            // Läser användarens inmatning
+            Console.WriteLine("Skriv ditt meddelande (eller skriv 'exit' för att avsluta):");
             string message = Console.ReadLine();
 
-            // Exit condition
+            // Villkor för att avsluta
             if (message == "exit")
             {
                 break;
             }
 
-            // Create data object and serialize to JSON
+            // Skapar upp ett dataobjekt och serialisera till JSON
             var data = new { Message = message };
             string jsonInput = JsonConvert.SerializeObject(data);
 
-            // Send JSON data to server
+            // Skickar JSON-data till servern
             byte[] sendBuffer = Encoding.UTF8.GetBytes(jsonInput);
             await client.SendAsync(new ArraySegment<byte>(sendBuffer), WebSocketMessageType.Text, true, CancellationToken.None);
 
-            // Receive data from the server
+            // Tar emot data från servern
             var buffer = new byte[1024 * 4];
             WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
 
-            // Deserialize and display received JSON data
+            // Deserialiserar och visa den mottagna JSON-datan
             string jsonOutput = Encoding.UTF8.GetString(buffer, 0, result.Count);
             dynamic receivedData = JsonConvert.DeserializeObject(jsonOutput);
 
-            Console.WriteLine($"Received server time: {receivedData.ServerTime}");
+            Console.WriteLine($"Mottagen servertid: {receivedData.ServerTime}");
         }
     }
 }

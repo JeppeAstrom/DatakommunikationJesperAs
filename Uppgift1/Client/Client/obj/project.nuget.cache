@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XwB8LBlHuXNmvKXBl39V6l3Bo2KDoGO05KMj2EgkpYKOYcoGMfx5jFg0jl/CWE9VtrexAsXHEfB4l7QtoU1p4w==",
+  "dgSpecHash": "ST1lZK9Edsu1lZRYZr2w22PkmnDOHpEilhDtNONhJFNZgVlihJ2wLK+RPNligXkBEv9Wdysm1UIKber6fvVU3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jespe\\Downloads\\DataKommunikationJesperAs\\Uppgift1\\Client\\Client\\Client.csproj",
+  "projectFilePath": "C:\\Users\\jespe\\Downloads\\12342423\\Uppgift1\\Client\\Client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jespe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
